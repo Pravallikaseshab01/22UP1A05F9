@@ -1,7 +1,4 @@
-Got it. Here’s the same **README.md** rewritten without emojis:
-
-```markdown
-# 22UP1A05F9 – URL Shortener with Logging Middleware
+ 22UP1A05F9 – URL Shortener with Logging Middleware
 
 This repository contains the implementation of a URL Shortener Application with integrated custom Logging Middleware.  
 The project is structured into two main modules as required:
@@ -19,9 +16,6 @@ The project is structured into two main modules as required:
 - Optional validity period in minutes (default: 30 mins).
 - Generates shortened links in the format:
 ```
-
-[http://localhost:3000/](http://localhost:3000/)<alias>
-
 ```
 - Handles redirection client-side through React Router.
 - Tracks analytics:
@@ -57,46 +51,8 @@ The project is structured into two main modules as required:
 - Storage: LocalStorage (for session/state persistence)  
 - Logger: Custom reusable module, integrated with the evaluation server  
 
----
-
-## Project Structure
-
-```
-
-22UP1A05F9/
-│
-├── logging-middleware/        # Reusable logger package
-│   └── index.ts
-│
-├── url-shortener-frontend/    # React frontend application
-│   ├── src/
-│   │   ├── pages/
-│   │   │   ├── GeneratePage.tsx
-│   │   │   ├── StatisticsPage.tsx
-│   │   │   └── Redirector.tsx
-│   │   ├── lib/
-│   │   │   ├── storage.ts
-│   │   │   └── auth.ts
-│   │   ├── logger/
-│   │   │   └── index.ts
-│   │   └── App.tsx
-│   └── package.json
-│
-├── redirector/                # Optional Node.js persistence server
-│   └── server.js
-│
-└── README.md
-
-````
-
----
 
 ## Setup Instructions
-
-### Prerequisites
-- Node.js (>= 16.x)
-- npm or yarn
-
 ### Clone the Repo
 ```bash
 git clone https://github.com/Pravallikaseshab01/22UP1A05F9.git
